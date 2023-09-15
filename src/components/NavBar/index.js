@@ -13,7 +13,7 @@ import {
   faFolder,
   faStickyNote,
   faCog,
-  faEllipsisH,
+  // faEllipsisH,
 } from "@fortawesome/free-solid-svg-icons";
 import "styled-components/macro";
 
@@ -28,7 +28,6 @@ function NavBar({ children, ...rest }) {
         <MenuItem to="/contacts" icon={faUser} />
         <MenuItem to="/files" icon={faFolder} />
         <MenuItem to="/notes" icon={faStickyNote} />
-        <MenuItem icon={faEllipsisH} />
         <MenuItem
           to="/settings"
           icon={faCog}
@@ -36,6 +35,7 @@ function NavBar({ children, ...rest }) {
             align-self: end;
           `}
         />
+        {/* <MenuItem to="/more" icon={faEllipsisH} /> */}
       </MenuItems>
     </StyledNavBar>
   );
